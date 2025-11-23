@@ -1,0 +1,25 @@
+BoxLayout:
+    orientation: 'vertical'
+    padding: 10
+    spacing: 10
+
+    BoxLayout:
+        orientation: 'horizontal'
+        spacing: 10
+
+        TextInput:
+            id: input_number
+            text: ''
+            multiline: False
+
+        Button:
+            text: 'Square'
+            on_press: app.handle_square()
+
+        Label:
+            id: output_label
+            text: '0'
+            color: (1, 0.6, 0.7, 1)   # pink
+
+    Label:
+        text: 'Enter a number and press "Square"'
